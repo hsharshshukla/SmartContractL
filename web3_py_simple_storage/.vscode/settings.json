@@ -1,0 +1,7 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "solidity.compileUsingRemoteVersion": "v0.8.21+commit.d9974bed"
+}
