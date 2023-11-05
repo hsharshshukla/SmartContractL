@@ -81,6 +81,14 @@ contract FundMe {
         _;
     }
 
+    //getEntrance Fee
+    function getEntranceFee() public view returns (uint256) {
+        uint256 minimumUSD = 50 * 10 ** 18;
+        uint256 price = getPrice();
+        uint256 precision = 1 * 10 ** 18;
+        return (minimumUSD * precision) / price;
+    }
+
     // onlyOwner modifer will first check the condition inside it
     // and
     // if true, withdraw function will be executed
